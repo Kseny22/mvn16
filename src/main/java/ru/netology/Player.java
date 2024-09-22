@@ -1,9 +1,9 @@
 package ru.netology;
 
 public class Player {
-    protected int id;
-    protected String name;
-    protected int strength;
+    private int id;
+    private String name;
+    private int strength;
 
     public Player(int id, String name, int strength) {
         this.id = id;
@@ -12,11 +12,13 @@ public class Player {
 
     }
 
+
     public String getName() {
         return name;
     }
 
     public int getStrength() {
+
         return strength;
     }
 }

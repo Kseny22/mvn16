@@ -24,7 +24,7 @@ class GameTest {
     @Test
     public void WhenFirstPlayerWin() {
         Player vasya = new Player(2323, "Вася", 120);
-        Player misha = new Player(1234567,"Миша" , 100);
+        Player misha = new Player(1234567, "Миша", 100);
         Game game = new Game();
 
         game.register(vasya);
@@ -65,8 +65,8 @@ class GameTest {
                 () -> game.round("Лев", "Миша"));
 
 
-
     }
+
     @Test
     public void WhenSecondPlayerNotExist() {
         Player misha = new Player(1, "Миша", 100);
@@ -75,7 +75,6 @@ class GameTest {
         game.register(misha);
         Assertions.assertThrows(NotRegisteredException.class,
                 () -> game.round("Миша", "Лев"));
-
 
 
     }
